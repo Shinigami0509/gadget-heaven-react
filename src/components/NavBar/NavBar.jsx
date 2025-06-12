@@ -14,7 +14,7 @@ const NavBar = () => {
         <li><Link to='dashboard'>Dashboard</Link></li>
     </>
 
-    console.log(getStoredWishList().length)
+    
     const { pathname } = useLocation()
 
     return (

@@ -29,7 +29,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'dashboard',
-        element: <DashBoard></DashBoard>
+        element: <DashBoard></DashBoard>,
+        loader: () => gadgetLoader() 
       },
       {
         path: 'statistics',
