@@ -17,7 +17,7 @@ const NavBar = () => {
 
     return (
         <div>
-            <div className={`navbar bg-base-100 ${(pathname==='/')? 'bg-[#9538E2] rounded-t-2xl': '' }`}>
+            <div className={`navbar bg-base-100 ${(pathname==='/')? 'bg-[#9330E4] rounded-t-2xl': '' }`}>
                 <div className="navbar-start ml-20">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

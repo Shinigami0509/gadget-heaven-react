@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": "GAD001",
+    "product_title": "XPhone Pro 14",
+    "product_image": "https://i.ibb.co/1JrX1tf2/iphone.jpg",
+    "category": "Mobile Devices",
+    "price": 999.99,
+    "description": "Powerful edge-to-edge OLED smartphone with A16 chip.",
+    "specification": ["6.7\" OLED", "128GB Storage", "Triple Camera", "5G"],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "GAD002",
+    "product_title": "SmartFit Band 5",
+    "product_image": "https://i.ibb.co/MDKWycGv/watch.jpg",
+    "category": "Accessories",
+    "price": 69.99,
+    "description": "Fitness tracker with heart rate and sleep monitoring.",
+    "specification": ["1.1\" AMOLED", "14-day Battery", "Water Resistant", "Bluetooth 5.0"],
+    "availability": "In Stock",
+    "rating": 4.3
+  },
+  {
+    "product_id": "GAD003",
+    "product_title": "TabMax 11 Pro",
+    "product_image": "https://i.ibb.co/cHzbNht/ipad.jpg",
+    "category": "Mobile Devices",
+    "price": 499.00,
+    "description": "Sleek 11\" tablet for productivity and portability.",
+    "specification": ["11\" LCD", "256GB Storage", "Quad Speakers", "Stylus Support"],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "GAD004",
+    "product_title": "AirBuds Nova",
+    "product_image": "https://i.ibb.co/HDNqQZ4N/airbuds.jpg",
+    "category": "Accessories",
+    "price": 129.99,
+    "description": "True wireless earbuds with ANC and wireless charging.",
+    "specification": ["Bluetooth 5.2", "ANC", "Wireless Charging", "Touch Controls"],
+    "availability": "Out of Stock",
+    "rating": 4.1
+  },
+  {
+    "product_id": "GAD005",
+    "product_title": "UltraCam VlogPro",
+    "product_image": "https://i.ibb.co/YTVS20ps/gopro.jpg",
+    "category": "Imaging & Video",
+    "price": 599.99,
+    "description": "Compact camera with 4K and flip screen.",
+    "specification": ["20MP CMOS", "4K Recording", "Wi-Fi", "180° Flip Screen"],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "GAD006",
+    "product_title": "GameBox Z",
+    "product_image": "https://i.ibb.co/nNx71vj1/gaming.jpg",
+    "category": "Entertainment",
+    "price": 399.99,
+    "description": "Next-gen console with stunning graphics.",
+    "specification": ["8K HDR Support", "1TB SSD", "DualSense Controller", "VR Ready"],
+    "availability": "Out of Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": "GAD007",
+    "product_title": "ZenBook Slim X",
+    "product_image": "https://i.ibb.co/j1zpNtW/zenbook.jpg",
+    "category": "Computing",
+    "price": 1199.00,
+    "description": "Ultra-thin 14\" laptop with long battery life.",
+    "specification": ["14\" 4K Display", "Intel i7", "16GB RAM", "512GB SSD"],
+    "availability": "In Stock",
+    "rating": 4.4
+  },
+  {
+    "product_id": "GAD008",
+    "product_title": "EchoHome Smart Speaker",
+    "product_image": "https://i.ibb.co/5gT3ZDgQ/echohome.jpg",
+    "category": "Accessories",
+    "price": 89.99,
+    "description": "Voice-controlled smart speaker with rich sound.",
+    "specification": ["Alexa Built-In", "Multi-room Audio", "Smart Hub", "Wi-Fi/Bluetooth"],
+    "availability": "In Stock",
+    "rating": 4.2
+  },
+  {
+    "product_id": "GAD009",
+    "product_title": "DroneX Explorer",
+    "product_image": "https://i.ibb.co/FLgM1xFL/drone.jpg",
+    "category": "Imaging & Video",
+    "price": 299.99,
+    "description": "High-performance drone with 4K camera.",
+    "specification": ["4K Camera", "GPS Return Home", "30-min Flight", "Foldable Design"],
+    "availability": "In Stock",
+    "rating": 4.0
+  },
+  {
+    "product_id": "GAD010",
+    "product_title": "VR Vision Pro",
+    "product_image": "https://i.ibb.co/wN0DTJ8S/vr.jpg",
+    "category": "Entertainment",
+    "price": 749.00,
+    "description": "Immersive headset with wide FOV and spatial audio.",
+    "specification": ["120° FOV", "6DoF Tracking", "Built-in Audio", "PC/Console Compatible"],
+    "availability": "Out of Stock",
+    "rating": 4.6
+  }
+]
