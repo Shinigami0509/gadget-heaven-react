@@ -9,18 +9,22 @@ import { getStoredCart } from '../../utility/addToDb';
 const DashBoard = () => {
 
     const [cart, setCart] = useState([])
-    const allProduct = useLoaderData() 
-    let totalPrice = 0  
-    useEffect(()=>{
+    const allProduct = useLoaderData()
+    let totalPrice = 0
+    useEffect(() => {
         const storedProduct = getStoredCart()
-        const storedProductId = storedProduct.map(id=>id[0])
+        const storedProductId = storedProduct.map(id => id[0])
 
-        const cartList = allProduct.filter(p=> storedProduct.includes(p.product_id)  )
+        const cartList = allProduct.filter(p => storedProduct.includes(p.product_id))
         setCart(cartList)
-        totalPrice += cartList.price
-        // console.log(cartList)
-    },[])
-    
+        // totalPrice += cartList.price
+
+    }, [])
+    cart.map((cart) => totalPrice += cart.price)
+
+    // console.log(totalPrice)
+
+
 
     return (
         <Tabs>
@@ -40,12 +44,22 @@ const DashBoard = () => {
             {/* Panel outside the colored div */}
             <div className="mt-6">
                 <TabPanel>
-                    <div>
-                        <h2 className='max-w-7xl mx-auto text-2xl font-bold'>Cart</h2>
+                    <div className='max-w-7xl mx-auto'>
+                        <div className='flex justify-between font-bold text-2xl'>
+                            <h2>Cart</h2>
+                            <div className='flex gap-4 items-center'>
+                                <p>Total cost: {totalPrice}</p>
+                                <button className="btn btn-outline btn-secondary rounded-3xl">Sort by Price</button>
+                                <button className="btn btn-secondary rounded-3xl">Purchase</button>
+                            </div>
+                        </div>
 
-                        {                            
-                            cart.map((cart)=><Cart key={cart.product_id} cart={cart}> </Cart>)
-                        }
+                        <div className='space-y-4 my-8'>
+                            {
+                                cart.map((cart) => <Cart key={cart.product_id} cart={cart}> </Cart>)
+                            }
+                        </div>
+
                     </div>
 
                 </TabPanel>

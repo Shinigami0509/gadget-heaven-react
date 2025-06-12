@@ -21,6 +21,11 @@ const addtoStoredCart = (id) =>{
     }
 }
 
+const updateCart = (id) =>{
+    const storedList = getStoredCart()
+    console.log(storedList)
+}
+
 
 
 const getStoredWishList = () => {
@@ -44,4 +49,6 @@ const addtoStoredWishList = (id) =>{
     }
 }
 
-export {addtoStoredCart, addtoStoredWishList, getStoredCart, getStoredWishList}
+
+
+export {updateCart, addtoStoredCart, addtoStoredWishList, getStoredCart, getStoredWishList}
