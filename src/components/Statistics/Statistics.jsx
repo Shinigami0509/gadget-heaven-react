@@ -10,6 +10,8 @@ const Statistics = () => {
                     devices to the coolest accessories, we have it all!
                 </p>
 
+                
+
             </div>
         </div>
     );
