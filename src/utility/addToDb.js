@@ -2,18 +2,18 @@ import { toast } from "react-toastify"
 
 const getStoredCart = () => {
     const storedListStr = localStorage.getItem('cart-list')
-    if(storedListStr){
+    if (storedListStr) {
         const storedList = JSON.parse(storedListStr)
         return storedList
-    } else{
+    } else {
         return []
     }
 }
-const addtoStoredCart = (id) =>{
+const addtoStoredCart = (id) => {
     const storedList = getStoredCart()
-    if(storedList.includes(id)){
+    if (storedList.includes(id)) {
         console.log(id, 'Already exists in the Cart list')
-    } else{
+    } else {
         storedList.push(id)
         const storedListStr = JSON.stringify(storedList)
         localStorage.setItem('cart-list', storedListStr)
@@ -21,27 +21,29 @@ const addtoStoredCart = (id) =>{
     }
 }
 
-const updateCart = (id) =>{
+const updateCart = (id) => {
     const storedList = getStoredCart()
-    console.log(storedList)
+    const updateCart = storedList.filter(p => p !== id)
+    localStorage.setItem('cart-list', JSON.stringify(updateCart))
+    // console.log(updateCart)
 }
 
 
 
 const getStoredWishList = () => {
     const storedListStr = localStorage.getItem('wish-list')
-    if(storedListStr){
+    if (storedListStr) {
         const storedList = JSON.parse(storedListStr)
         return storedList
-    } else{
+    } else {
         return []
     }
 }
-const addtoStoredWishList = (id) =>{
+const addtoStoredWishList = (id) => {
     const storedList = getStoredWishList()
-    if(storedList.includes(id)){
+    if (storedList.includes(id)) {
         console.log(id, 'Already exists in the wish list')
-    } else{
+    } else {
         storedList.push(id)
         const storedListStr = JSON.stringify(storedList)
         localStorage.setItem('wish-list', storedListStr)
@@ -51,4 +53,4 @@ const addtoStoredWishList = (id) =>{
 
 
 
-export {updateCart, addtoStoredCart, addtoStoredWishList, getStoredCart, getStoredWishList}
+export { updateCart, addtoStoredCart, addtoStoredWishList, getStoredCart, getStoredWishList }
